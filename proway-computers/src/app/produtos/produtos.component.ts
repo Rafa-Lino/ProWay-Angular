@@ -8,9 +8,6 @@ import { ProdutosService } from '../produtos.service';
   templateUrl: './produtos.component.html',
   styleUrls: ['./produtos.component.css']
 })
-
-
-
 export class ProdutosComponent implements OnInit {
   produtos: IProduto[] | undefined;
   
@@ -18,7 +15,6 @@ export class ProdutosComponent implements OnInit {
     private produtosService: ProdutosService,
     private route: ActivatedRoute
   ) { }
-
 
   ngOnInit(): void {
     const produtos = this.produtosService.getAll();

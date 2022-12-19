@@ -11,7 +11,9 @@ describe('ContatoComponent', () => {
       declarations: [ ContatoComponent ]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(ContatoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

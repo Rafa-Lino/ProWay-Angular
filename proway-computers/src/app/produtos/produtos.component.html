@@ -3,13 +3,13 @@
         <a routerLink="/produtos/{{produto.id}}" class="product-list__link">
             <img [src]="produto.imagem">
             <h2 class="product-item__name">
-                {{produto.descricao}}
+                {{ produto.descricao }}
             </h2>
             <p class="product-item__price">
-                {{produto.preco | currency: "BRL"}}
+                {{ produto.preco | currency: "BRL" }}
             </p>
             <p class="product-item__price-description">
-                {{produto.descricaoPreco}}
+                {{ produto.descricaoPreco }}
             </p>
             <button class="product-item__buy-button" type="button">Comprar</button>
         </a>
