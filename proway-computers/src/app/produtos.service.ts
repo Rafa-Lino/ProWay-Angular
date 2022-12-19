@@ -5,7 +5,6 @@ import { IProduto, produtos } from './produtos';
   providedIn: 'root'
 })
 export class ProdutosService {
-
   produtos: IProduto[] = produtos;
 
   constructor() { }
@@ -15,6 +14,6 @@ export class ProdutosService {
   }
 
   getOne(produtoId: number) {
-    return this.produtos.find(produto => produto.id = produtoId);
+    return this.produtos.find(produto => produto.id === produtoId);
   }
 }
