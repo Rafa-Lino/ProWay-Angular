@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     ProdutosComponent,
-    DetalhesProdutoComponent
+    DetalhesProdutoComponent,
   ],
   imports: [
     CommonModule,
